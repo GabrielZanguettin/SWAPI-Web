@@ -10,6 +10,8 @@ Como instalar
 
 Primeiro de tudo, você deve ter o <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a> instalado no seu PC. Depois, abra a parte de extensões e instale o <a href="https://media.geeksforgeeks.org/wp-content/uploads/20221201183502/Enableliveserver3.jpg" target="_blank">Live Server</a>. Agora e só clicar o botão direito em cima do arquivo "index.html" e clique na primeira opção "Open with Live Server".
 
+Caso não queria fazer isso, é só clicar aqui para ir ao site ou clique no link que está na descrição do repositório.
+
 ------------------------------
 Como a aplicação foi projetada
 ------------------------------
