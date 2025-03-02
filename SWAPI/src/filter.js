@@ -93,11 +93,13 @@ export async function searchCharacter(value) {
         const film = films[i];
 
         if (arrayCharactersNames.length >= films.length) {
-            if (arrayCharactersNames[i].includes(searchValue)) {
+
+            if (arrayCharactersNames[i].some(name => name.includes(searchValue))) {
                 film.style.border = "5px solid green";
             } else {
                 film.style.border = "2px solid #4c4e53";
             }
+            
         } else {
             const characterElements = film.querySelectorAll(".characters_of_film");
             let characterUrls = Array.from(characterElements).map(el => el.innerText.trim());
@@ -110,7 +112,7 @@ export async function searchCharacter(value) {
 
                 arrayCharactersNames.push(characterNames);
 
-                if (characterNames.includes(searchValue)) {
+                if (characterNames.some(name => name.includes(searchValue))) {
                     film.style.border = "5px solid green";
                 } else {
                     film.style.border = "2px solid #4c4e53";
@@ -124,4 +126,3 @@ export async function searchCharacter(value) {
 
     loadingElement.classList.add("hide");
 }
-

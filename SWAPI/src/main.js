@@ -1,7 +1,7 @@
 import { loadCharacters, loadFilms, loadPlanets } from "./api.js";
 import { filterCharacters, orderPlanets, orderFilms, searchCharacter } from "./filter.js"
 import { toggleModalInfos, toggleModalFilms } from "./modals.js";
-import { sounds, controller } from "./utils.js";
+import { sounds, controller, resetBorderOfFilms } from "./utils.js";
 
 const filterBtn = document.querySelector("#filter-btn");
 const orderPlanetsBtn = document.querySelector("#order-btn");
@@ -9,7 +9,7 @@ const orderFilmsBtn = document.querySelector("#films-btn");
 const closeModalInfosBtn = document.querySelector("#close-modal-infos");
 const closeModalFilmsBtn = document.querySelector("#close-modal-films");
 const helpBtn = document.querySelector("#need-help-btn");
-const searchInput = document.querySelector("#search-input");
+export const searchInput = document.querySelector("#search-input");
 
 const validKeys = ["Enter", "Go", "Next", "Done", "Search"];
 
@@ -34,6 +34,7 @@ closeModalInfosBtn.addEventListener("click", () => {
 })
 
 closeModalFilmsBtn.addEventListener("click", () => {
+  resetBorderOfFilms();
   toggleModalFilms();
 })
 

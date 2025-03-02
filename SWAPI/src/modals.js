@@ -1,3 +1,4 @@
+import { searchInput } from "./main.js"
 
 const modalInfos = document.querySelector("#modal-infos");
 const modalFilms = document.querySelector("#modal-films");
@@ -26,4 +27,5 @@ export function toggleModalFilms() {
     } else {
         document.body.classList.remove("no-scroll");
     }
+    searchInput.value = "";
 }
