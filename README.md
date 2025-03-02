@@ -18,7 +18,7 @@ Extraia a pasta, e depois abra a pasta "SWAPI" com o Visual Studio Code. Verifiq
 
 Agora é só clicar com o botão direito em cima do arquivo "index.html" e selecionar a primeira opção "Open with Live Server".
 
-Caso não queria fazer isso, é só clicar <a href="https://swapi-web-z.netlify.app/">aqui</a> para ir ao site ou clique no link que está na descrição do repositório.
+Caso não queira fazer isso, é só clicar <a href="https://swapi-web-z.netlify.app/">aqui</a> para ir ao site ou clique no link que está na descrição do repositório.
 
 ------------------------------
 Como a aplicação foi projetada
