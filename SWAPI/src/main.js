@@ -11,6 +11,8 @@ const closeModalFilmsBtn = document.querySelector("#close-modal-films");
 const helpBtn = document.querySelector("#need-help-btn");
 const searchInput = document.querySelector("#search-input");
 
+const validKeys = ["Enter", "Go", "Next", "Done", "Search"];
+
 filterBtn.addEventListener("change", (e) => {
   const filterValue = e.target.value;
   filterCharacters(filterValue);
@@ -54,10 +56,14 @@ helpBtn.addEventListener("click", () => {
   toggleModalFilms();
 });
 
+
 searchInput.addEventListener("keydown", (e) => {
-  if (e.key === "Enter") {
-    searchCharacter(e.target.value);
-  }
+    
+    if (validKeys.includes(e.key)) {
+        e.preventDefault();
+        searchCharacter(searchInput.value.trim());
+    };
+
 });
 
 loadCharacters();

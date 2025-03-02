@@ -128,14 +128,24 @@ main {
     gap: 1rem;
     justify-content: center;
     margin-left: 130px;
+    position: relative;
 }
 
 #search-container input {
     border-radius: 5px;
     border: none;
     padding: 10px;
+    padding-left: 35px;
     width: 300px;
     outline: none;
+}
+
+
+#search-container i {
+    position: absolute;
+    color: black;
+    left: 10px;
+    font-size: 16px;
 }
 
 .loading {
@@ -312,6 +322,15 @@ main {
 }
 
 /* Responsividade */
+
+@media (min-width: 400px) and (max-width: 475px) {
+    #modal-films {
+        padding: 0;
+    }
+    #films-filter-container {
+        margin-top: 25px;
+    }
+}
 
 @media (max-width: 782px) {
     #filters-container,
