@@ -8,9 +8,8 @@ Uma aplicação web que se conecta com a SWAPI (Star Wars API), onde você pode 
 Como a aplicação foi projetada
 ------------------------------
 
-Ao abrir a aplicação, você se depara com um layout com os 10 primeiros personagens retornados pela SWAPI. Você pode filtrar e visualizar por gênero (masc, femin, android). 
-Também é possível visualizar as informações de um personagem específico ao clicar nos três pontinhos verticais, onde é possível ver qual filmes este personagem aparece, seus veículos, naves, e muitos outros.
-Logo após os personagens, temos outro layout com os 10 primeiros planetas, também retornados pela SWAPI. Você pode ordenar por pop crescente ou decrescente.
+Ao abrir a aplicação, você verá um layout exibindo os 10 primeiros personagens retornados pela SWAPI. É possível filtrar por gênero (masculino, feminino ou androide) e visualizar informações detalhadas de um personagem específico clicando nos três pontinhos verticais. Essas informações incluem os filmes em que o personagem aparece, seus veículos, naves e muito mais.
 
-No canto superior direito, existe o botão "Quer ajuda com os filmes?". Ao clicar nele é exibido os 6 filmes pelo endpoint da SWAPI. Caso tenha dúvida sobre qual ordem você deve começar a assistir (cronológica ou na ordem dos cinemas), existe uma ordenação para isso.
-Caso goste muito de um personagem, você pode pesquisar por ele e ver em quais filmes ele aparece, adicionando uma borda verde nos filmes em que ele esteve.
+Logo abaixo, há uma seção com os 10 primeiros planetas também retornados pela SWAPI, onde você pode ordená-los por população, de forma crescente ou decrescente.
+
+No canto superior direito, há um botão "Precisa de ajuda com os filmes?". Ao clicar nele, são exibidos os 6 filmes disponíveis na SWAPI. Se você tiver dúvidas sobre a melhor ordem para assisti-los (cronológica ou de lançamento nos cinemas), há uma opção de ordenação para facilitar. Além disso, caso tenha um personagem favorito, você pode pesquisá-lo e ver em quais filmes ele aparece – os filmes em que ele está presente receberão uma borda verde para destaque.
