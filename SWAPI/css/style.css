@@ -323,16 +323,17 @@ main {
 
 /* Responsividade */
 
-@media (min-width: 400px) and (max-width: 475px) {
+
+@media (max-width: 782px) {
+
     #modal-films {
         padding: 0;
     }
+
     #films-filter-container {
         margin-top: 25px;
     }
-}
-
-@media (max-width: 782px) {
+    
     #filters-container,
     #ordering-container,
     #films-filter-container {
@@ -394,6 +395,14 @@ main {
 }
 
 @media (min-width: 782px) and (max-width: 1070px) {
+
+    #modal-films {
+        padding: 0;
+    }
+
+    #films-filter-container {
+        margin-top: 25px;
+    }
     
     #filters-container,
     #ordering-container,
@@ -439,7 +448,6 @@ main {
         justify-content: center;
         align-items: center;
     }
-
 
 }
 
