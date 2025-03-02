@@ -9,8 +9,7 @@ Como instalar
 -------------
 
 
-<a href="https://code.visualstudio.com/">Vscode</a>
-
+<a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a>
 
 
 ------------------------------
