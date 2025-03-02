@@ -8,7 +8,7 @@ Uma aplicação web que se conecta com a SWAPI (Star Wars API), onde você pode 
 Como instalar
 -------------
 
-![image](https://github.com/user-attachments/assets/6c7d51e7-3611-4fe8-aa56-45a92566791f)
+
 
 
 
