@@ -1,0 +1,434 @@
+/* Estilos padrão */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+/* Css */
+
+header {
+    display: flex;
+    background-color: black;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    text-align: center;
+}
+
+header h2 {
+    color: white;
+}
+
+
+#need-help-btn {
+    padding: 12px 25px;
+    border-radius: 5px;
+    background: linear-gradient(90deg, transparent 50%, #fff 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    border: none;
+    cursor: pointer;
+    transition: background-position 0.6s ease-in-out;
+}
+
+#need-help-btn:hover {
+    color: #fff;
+    background-color: #0e41da;
+    background-position: 0 0;
+}
+
+body {
+    background-image: url("/img/estrelas.jpg");
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-content {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 85%;
+    min-height: 600px;
+    height: auto;
+}
+
+
+#filters-container,
+#ordering-container,
+#films-filter-container {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+#filter-btn,
+#order-btn {
+    padding: 4px;
+}
+
+#films-btn {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#filter-btn:focus,
+#order-btn:focus,
+#films-btn:focus {
+    outline: none;
+}
+
+#characters-container,
+#planets-container,
+#films-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    gap: 3rem;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.character,
+.planet {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    min-height: 330px;
+    width: 270px;
+    padding: 4rem;
+    border: 2px solid #232424;
+    position: relative;
+    color: white;
+}
+
+.infos {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#films-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#search-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+    margin-left: 130px;
+}
+
+#search-container input {
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    width: 300px;
+    outline: none;
+}
+
+.loading {
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 15px 25px;
+    font-size: 18px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.hide {
+    display: none;
+}
+
+.film {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    min-height: 400px;
+    width: 250px;
+    padding: 2rem;
+    border: 2px solid #4c4e53;
+    position: relative;
+    color: white;
+    transition: 0.6s;
+}
+
+.film h3 {
+    background-color: rgba(0, 0, 0, 0.4)
+}
+
+
+.character.hidden {
+    display: none;
+}
+
+.character h3,
+.character p,
+.planet h3,
+.planet p {
+    text-align: center;
+}
+
+.character .bi-three-dots-vertical,
+.planet .bi-three-dots-vertical {
+   color: white
+}
+
+.get-info {
+    padding: 10px;
+    border-radius: 4px;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+}
+
+#fade, #modal-infos {
+    pointer-events: all;
+    opacity: 1;
+}
+
+#fade {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 5;
+    transition: 0.5s;
+}
+
+#modal-infos {
+    position: fixed;
+    display: block;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background-color: #202124;
+    width: 500px;
+    min-height: 400px;
+    height: auto;
+    max-width: 90%;
+    padding: 3rem;
+    border-radius: 0.5rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    overflow: hidden;
+    text-align: center;
+    white-space: normal;
+    transition: 0.5s;
+}
+
+
+#modal-infos-header .bi-x,
+#modal-films-header .bi-x {
+    color: #FFF;
+}
+
+
+#modal-infos-header button,
+#modal-films-header button {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: transparent;
+    border: 1px solid #FFF;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 1rem;
+}
+
+#modal-infos-header button:hover,
+#modal-films-header button:hover {
+    background-color: red;
+    border: 1px solid #202124;
+}
+
+#modal-films-body {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#modal-infos-body {
+    margin-top: 20px;
+    color: #fff;
+}
+
+#modal-infos.hide,
+#modal-films.hide,
+#fade.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.no-scroll {
+    overflow: hidden;
+    height: 100vh;
+}
+
+#modal-films {
+    position: fixed;
+    display: block;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background-color: #202124;
+    width: 1600px;
+    max-width: 90%;
+    max-height: 80vh;
+    padding: 3rem;
+    border-radius: 0.5rem;
+    overflow-y: auto;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    text-align: center;
+    white-space: normal;
+    transition: 0.5s;
+}
+
+/* Responsividade */
+
+@media (max-width: 782px) {
+    #filters-container,
+    #ordering-container,
+    #films-filter-container {
+        justify-content: center;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    #filters-container h2,
+    #ordering-container h2 {
+        font-size: 16px;
+    }
+
+    #filter-input,
+    #order-input,
+    #films-input {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+    
+    #filter-input label,
+    #order-input label,
+    #films-input label {
+        white-space: nowrap;
+        
+    }
+
+    #characters-container,
+    #planets-container,
+    #films-container {
+        gap: 18px;
+    }
+
+    .character .infos,
+    .planet .infos {
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    #search-container {
+        margin-left: 0;
+    }
+
+    #search-container input {
+        width: 250px;
+    }
+
+    #films-filter-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #films-filter-container h2 {
+        font-size: 19px;
+    }
+
+}
+
+@media (min-width: 782px) and (max-width: 1070px) {
+    
+    #filters-container,
+    #ordering-container,
+    #films-filter-container {
+        justify-content: space-between;
+        gap: 2rem;
+        align-items: center;
+    }
+
+
+    #filter-input,
+    #order-input,
+    #films-input {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+    
+    #filter-input label,
+    #order-input label,
+    #films-input label {
+        white-space: nowrap;
+        
+    }
+
+    #characters-container,
+    #planets-container,
+    #films-container {
+        gap: 18px;
+    }
+
+
+    #search-container {
+        margin-left: 0;
+    }
+
+    #search-container input {
+        width: 250px;
+    }
+
+    #films-filter-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+}
+
+@media (min-width: 1070px) and (max-width: 1465px) {
+
+    #films-input label {
+        white-space: nowrap;
+        margin-left: 30px;
+    }
+
+}

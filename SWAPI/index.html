@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio vaga estágio</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script type="module" src="./src/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <h2>SWAPI</h2>
+        <button id="need-help-btn">Quer ajuda com os filmes?</button>
+    </header>
+    <main>
+        <div class="main-content">
+            <div id="filters-container">
+                <h2>Personagens</h2>
+                <div id="filter-input">
+                    <label for="filters">Filtrar por:</label>
+                    <select id="filter-btn" name="filters">
+                        <option value="all">Todos</option>
+                        <option value="male">Masculino</option>
+                        <option value="female">Feminino</option>
+                        <option value="n/a">Desconhecido</option>
+                    </select>
+                  </div>
+            </div>
+            <div id="characters-container">
+            </div>
+        </div>
+        <div class="main-content">
+            <div id="ordering-container">
+                <h2>Planetas</h2>
+                <div id="order-input">
+                    <label for="orders">Ordenar por:</label>
+                    <select id="order-btn" name="orders">
+                        <option value="normal">Padrão</option>
+                        <option value="ascending">Pop crescente</option>
+                        <option value="descending">Pop decrescente</option>
+                    </select>
+                  </div>
+            </div>
+            <div id="planets-container">
+            </div>
+        </div>
+    </main>
+    <div id="fade" class="hide"></div>
+    <div id="modal-infos" class="hide">
+        <div id="modal-infos-header">
+            <button id="close-modal-infos"><i class="bi bi-x"></i></button>
+        </div>
+        <div id="modal-infos-body">
+        </div>
+    </div>
+    <div id="modal-films" class="hide">
+        <div id="modal-films-header">
+            <button id="close-modal-films"><i class="bi bi-x"></i></button>
+        </div>
+        <div id="modal-films-body">
+            <div id="films-filter-container">
+                <h2>Filmes</h2>
+                <div id="search-container">
+                    <i class="bi bi-search"></i>
+                    <input type="text" id="search-input" placeholder="Busque por um personagem">
+                    <div id="loading" class="loading hide">Carregando...</div>
+                </div>
+                <div id="films-input">
+                    <label for="films">Filtrar por:</label>
+                    <select id="films-btn" name="films">
+                        <option value="release-date">Ordem de lançamento</option>
+                        <option value="episode-id">Ordem cronológica</option>
+                    </select>
+                  </div>
+            </div>
+            <div id="films-container"></div>
+        </div>
+    </div>
+</body>
+</html>
