@@ -8,7 +8,15 @@ Uma aplicação web que se conecta com a SWAPI (Star Wars API), onde você pode 
 Como instalar
 -------------
 
-Primeiro de tudo, você deve ter o <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a> instalado no seu PC. Depois, abra a parte de extensões e instale o <a href="https://media.geeksforgeeks.org/wp-content/uploads/20221201183502/Enableliveserver3.jpg" target="_blank">Live Server</a>. Agora é só clicar com o botão direito em cima do arquivo "index.html" e selecione a primeira opção "Open with Live Server".
+Primeiro de tudo, você deve ter o <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a> instalado no seu PC. Depois, abra a parte de extensões e instale o <a href="https://media.geeksforgeeks.org/wp-content/uploads/20221201183502/Enableliveserver3.jpg" target="_blank">Live Server</a>. Depois, volte ao repositório.
+
+Clique em "code" e depois em "download zip"
+
+![tutorial](https://github.com/user-attachments/assets/00db903d-8c6d-497c-b622-6e560dfe727d)
+
+Extraia a pasta, e depois abra a pasta "SWAPI" com o Visual Studio Code. Verifique se nesta pasta está o arquivo "index.html". Se estiver, é esta pasta que deve ser escolhida.
+
+Agora é só clicar com o botão direito em cima do arquivo "index.html" e selecione a primeira opção "Open with Live Server".
 
 Caso não queria fazer isso, é só clicar aqui para ir ao site ou clique no link que está na descrição do repositório.
 
