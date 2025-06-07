@@ -326,7 +326,7 @@ main {
 
 /* Responsividade */
 
-@media (min-width: 400px) and (max-width: 450px) {
+@media (min-width: 390px) and (max-width: 450px) {
     #characters-container,
     #planets-container,
     #films-container {
