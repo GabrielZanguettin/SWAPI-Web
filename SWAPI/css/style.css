@@ -336,7 +336,7 @@ main {
 
     .character,
     .planet {
-        width: 180px;
+        width: 170px;
         min-height: 260px;
         padding: 3rem;
     }
