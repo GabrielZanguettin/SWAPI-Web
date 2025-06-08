@@ -108,7 +108,6 @@ main {
     min-height: 330px;
     width: 270px;
     padding: 4rem;
-    border: 2px solid #232424;
     position: relative;
     color: white;
     transition: 0.4s;
@@ -116,6 +115,7 @@ main {
 
 .infos {
     background-color: rgba(0, 0, 0, 0.4);
+    white-space: nowrap;
 }
 
 #films-input {
@@ -176,7 +176,6 @@ main {
     min-height: 400px;
     width: 250px;
     padding: 2rem;
-    border: 2px solid #4c4e53;
     position: relative;
     color: white;
     transition: 0.6s;
@@ -313,7 +312,7 @@ main {
     background-color: #202124;
     width: 1600px;
     max-width: 90%;
-    max-height: 80vh;
+    max-height: 95vh;
     padding: 3rem;
     border-radius: 0.5rem;
     overflow-y: auto;
@@ -327,17 +326,24 @@ main {
 /* Responsividade */
 
 @media (min-width: 380px) and (max-width: 450px) {
+    .main-content {
+        padding: 0;
+    }
+
     #characters-container,
-    #planets-container,
+    #planets-container {
+        width: 100%;
+        padding: 0
+    }
+
     #films-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        padding: 0 0 10px 0;
     }
 
     .character,
     .planet {
         width: 170px;
-        min-height: 260px;
+        min-height: 265px;
         padding: 3rem;
     }
 
@@ -393,7 +399,7 @@ main {
     }
 
     #search-container input {
-        width: 250px;
+        width: 264px;
     }
 
     #films-filter-container {
@@ -404,11 +410,18 @@ main {
 }
 
 @media (min-width: 450px) and (max-width: 500px) {
+    .main-content {
+        padding: 0;
+    }
+
     #characters-container,
-    #planets-container,
+    #planets-container {
+        width: 100%;
+        padding: 0
+    }
+
     #films-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        padding: 0 0 10px 0;
     }
 
     .character,
@@ -470,7 +483,7 @@ main {
     }
 
     #search-container input {
-        width: 250px;
+        width: 264px;
     }
 
     #films-filter-container {
@@ -481,11 +494,18 @@ main {
 }
 
 @media (min-width: 500px) and (max-width: 550px) {
+    .main-content {
+        padding: 0;
+    }
+
     #characters-container,
-    #planets-container,
+    #planets-container {
+        width: 100%;
+        padding: 0
+    }
+
     #films-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        padding: 0 0 10px 0;
     }
 
     .character,
@@ -547,7 +567,7 @@ main {
     }
 
     #search-container input {
-        width: 250px;
+        width: 264px;
     }
 
     #films-filter-container {
@@ -558,11 +578,18 @@ main {
 }
 
 @media (min-width: 550px) and (max-width: 600px) {
+    .main-content {
+        padding: 0;
+    }
+
     #characters-container,
-    #planets-container,
+    #planets-container {
+        width: 100%;
+        padding: 0
+    }
+
     #films-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        padding: 0 0 10px 0;
     }
 
     .character,
@@ -624,7 +651,7 @@ main {
     }
 
     #search-container input {
-        width: 250px;
+        width: 264px;
     }
 
     #films-filter-container {
@@ -634,12 +661,19 @@ main {
     }
 }
 
-@media (min-width: 600px) and (max-width: 763px) {
+@media (min-width: 600px) and (max-width: 762px) {
+    .main-content {
+        padding: 0;
+    }
+
     #characters-container,
-    #planets-container,
+    #planets-container {
+        width: 100%;
+        padding: 0
+    }
+
     #films-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        padding: 0 0 10px 0;
     }
 
     .character,
@@ -680,7 +714,6 @@ main {
         align-items: center;
     }
 
-
     #filter-input,
     #order-input,
     #films-input {
@@ -701,7 +734,7 @@ main {
     }
 
     #search-container input {
-        width: 250px;
+        width: 264px;
     }
 
     #films-filter-container {
@@ -755,14 +788,12 @@ main {
         gap: 18px;
     }
 
-    
-
     #search-container {
         margin-left: 0;
     }
 
     #search-container input {
-        width: 250px;
+        width: 264px;
     }
 
     #films-filter-container{
@@ -802,13 +833,13 @@ main {
         display: flex;
         gap: 1rem;
         align-items: center;
+        white-space: nowrap;
     }
     
     #filter-input label,
     #order-input label,
     #films-input label {
         white-space: nowrap;
-        
     }
 
     #characters-container,
@@ -823,7 +854,7 @@ main {
     }
 
     #search-container input {
-        width: 250px;
+        width: 264px;
     }
 
     #films-filter-container {
