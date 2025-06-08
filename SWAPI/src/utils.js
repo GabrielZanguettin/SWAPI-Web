@@ -15,7 +15,7 @@ export function formatPopulation(population) {
 export function resetBorderOfFilms() {
   const films = document.querySelectorAll(".film");
   films.forEach((film) => {
-    film.style.border = "2px solid #4c4e53";
+    film.style.border = "1px solid #202124";
   });
 }
 

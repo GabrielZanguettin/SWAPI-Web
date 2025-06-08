@@ -97,7 +97,7 @@ export async function searchCharacter(value) {
             if (arrayCharactersNames[i].some(name => name.includes(searchValue))) {
                 film.style.border = "5px solid green";
             } else {
-                film.style.border = "2px solid #4c4e53";
+                film.style.border = "1px solid #202124";
             }
             
         } else {
@@ -115,7 +115,7 @@ export async function searchCharacter(value) {
                 if (characterNames.some(name => name.includes(searchValue))) {
                     film.style.border = "5px solid green";
                 } else {
-                    film.style.border = "2px solid #4c4e53";
+                    film.style.border = "1px solid #202124";
                 }
                 
             } catch (error) {
